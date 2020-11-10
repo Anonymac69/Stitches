@@ -11,9 +11,10 @@ export default {}
 </script>
 
 <style>
-/* font-family: 'Pacifico', cursive; */
-/* font-family: 'Poppins', sans-serif; */
+  /* font-family: 'Fredericka the Great', cursive; */
+  /* font-family: 'Raleway', sans-serif; */
 
+    
 .container {
   align-items: center;
   display: flex;
@@ -24,4 +25,5 @@ export default {}
   text-align: center;
   width: 100%;
 }
+
 </style>

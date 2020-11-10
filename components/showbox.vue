@@ -6,18 +6,21 @@
     <section class="panel">
       <div class="pane p01">
         <section class="pane-mssg-box"  uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-          <small>{{message}}</small>
+          <div class="pane-mssg-box-title"> {{message}} </div>
+          <small class="pane-mssg-box-text"> {{message}} </small>
         </section>
       </div>
 
       <div class="pane p02">
-        <section class="pane-mssg-box"  uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
+        <section class="pane-mssg-box"  uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+          <div class="pane-mssg-box-title"> {{message}} </div>
           <small>{{message}}</small>
         </section>
       </div>
 
       <div class="pane p03">
-        <section class="pane-mssg-box"  uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+        <section class="pane-mssg-box"  uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+          <div class="pane-mssg-box-title"> {{message}} </div>
           <small>{{message}}</small>
         </section>
       </div>
@@ -71,19 +74,26 @@ export default {
 
 .pane-mssg-box {
   align-items: center;
-  background: #000;
+  background: rgba(0, 0, 0, 0.7);
   border-radius: .2rem;
+  color: #fff;
   display: flex;
-  height: 100px;
-  justify-content: center;
+  flex-flow: column wrap;
+  height: 70px;
+  justify-content: space-between;
   margin: 10px;
   width: 50%;
+}
+
+.pane-mssg-box-title {
+  background: #070707;
+  width: 100%;
 }
 
 .panel {
   background: #f6f8fa;
   display: flex;
-  height: 300px;
+  height: 400px;
   margin: 50px auto;
   width: 100%;
 }

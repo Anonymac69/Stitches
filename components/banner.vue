@@ -2,8 +2,10 @@
   <main class="brand">
     <div class="brand-wrap">
       <p class="brand-title">Beyond the Fashion Statement</p>
-      <hr class="line">
+      <!-- <hr class="line"> -->
       <small class="brand-text">Gstitches is a progressive Fashion Design outfit birthed in 2020.</small>
+      <button class="brand-cta-btn">Contact Us</button>
+      <cardbox/>
     </div>
   </main>
 </template>
@@ -22,6 +24,19 @@ export default {
   height: 100vh;
   padding: 0 50px;
   width: 90%;
+}
+
+.brand-cta-btn {
+  background: #c108ff;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  height: 2.8rem;
+  margin: 30px 0 0 0;
+  outline: none;
+  width: 22rem;
 }
 
 .brand-text {

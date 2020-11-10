@@ -5,6 +5,7 @@
       <nuxt-link class="li" to="#about">About</nuxt-link>
       <nuxt-link class="li" to="#packages">Packages</nuxt-link>
       <nuxt-link class="li" to="#contact">Contact</nuxt-link>
+      <nuxt-link class="li" to="/auth/login">Login</nuxt-link>
     </ul>
     
     <span class="nav-menu" uk-icon="icon: menu; ratio: 1.2" uk-toggle="target: #offcanvas-slide"></span>
@@ -15,6 +16,7 @@
                 <nuxt-link class="li" to="#about">About</nuxt-link>
                 <nuxt-link class="li" to="#packages">Packages</nuxt-link>
                 <nuxt-link class="li" to="#contact">Contact</nuxt-link>
+                <nuxt-link class="li" to="/auth/login">Login</nuxt-link>
             </ul>        
         </div>
     </div>
@@ -71,6 +73,11 @@ nav {
   transform: translate3d(0, 0, 0);
   transition: 0.1s all ease-out;
   width: 100%;
+  z-index: 1000;
+}
+
+nav.nav--hidden {
+  transform: translate3d(0, -100%, 0)
 }
 
 .nav-brand, 
@@ -79,10 +86,6 @@ nav {
   font-family: 'Pacifico', cursive;
   font-size: 24px;
   text-decoration: none;
-}
-
-nav.nav--hidden {
-  transform: translate3d(0, -100%, 0)
 }
 
 .nav-links {
@@ -128,6 +131,18 @@ nav.nav--hidden {
 .nav-menu {
   color: #24292e;
   display: none;
+}
+
+.uk-offcanvas-close {
+  background: none !important;
+  color: #fff !important;
+  outline: none !important;
+}
+
+.uk-offcanvas-bar.uk-offcanvas-bar-animation.uk-offcanvas-slide {
+  min-height: 100vh !important;
+  position: absolute !important;
+  z-index: 999;
 }
 
 @media screen and (max-width: 1000px) {

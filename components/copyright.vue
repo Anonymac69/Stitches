@@ -41,6 +41,7 @@ footer {
   font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
+  min-height: 100vh;
   width: 100%;
 }
 
